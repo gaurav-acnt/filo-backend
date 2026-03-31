@@ -29,6 +29,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "https://filo-file-sharing-and-cloud-storage-hmxp.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
     credentials: true,
@@ -62,6 +63,7 @@ const io= new Server(server,{
     cors:{
         origin:[
       "http://localhost:5173",
+      "https://filo-file-sharing-and-cloud-storage-hmxp.onrender.com",
     ],
         methods:["GET","POST",],
         credentials: true
