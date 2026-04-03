@@ -29,7 +29,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://filo-file-sharing-and-cloud-storage-nine.vercel.app"
+      "https://filo-file-sharing-and-cloud-storage-nine.vercel.app",
+      "https://filo-file-sharing-and-cloud-storage.onrender.com"
     ],
     methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
     credentials: true,
@@ -67,6 +68,7 @@ const io= new Server(server,{
         origin:[
       "http://localhost:5173",
       "https://filo-file-sharing-and-cloud-storage-nine.vercel.app",
+      "https://filo-file-sharing-and-cloud-storage.onrender.com"
     ],
         methods:["GET","POST",],
         credentials: true
